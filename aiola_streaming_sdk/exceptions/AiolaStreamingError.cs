@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 public class AiolaStreamingError : Exception
 {
     public Dictionary<string, object>? Details { get; }

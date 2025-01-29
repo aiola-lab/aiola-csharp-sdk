@@ -8,9 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="NAudio" Version="2.2.1" />
-    <!-- <PackageReference Include="PortAudioSharp" Version="0.3.0" /> -->
     <PackageReference Include="SharperPortAudio" Version="1.0.3" />
-    <!-- <PackageReference Include="PortAudioSharp2" Version="1.0.4" /> -->
   </ItemGroup>
 
   <ItemGroup>

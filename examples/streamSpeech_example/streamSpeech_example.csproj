@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\aiola_tts_sdk\aiola_tts_sdk.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 public static class AuthService
 {
     public static Dictionary<string, string> GetAuthHeaders(string authType, Dictionary<string, string> authCredentials)

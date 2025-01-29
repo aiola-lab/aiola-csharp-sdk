@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "transcript_events_example",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "keywords_spotting_example", "examples\keywords_spotting_example\keywords_spotting_example.csproj", "{1DB58ACD-B26C-4E9A-A8B3-05E8A24A7945}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "streamSpeech_example", "examples\streamSpeech_example\streamSpeech_example.csproj", "{99BB4ED1-A539-46C2-8F11-106A636162A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "synthesizeSpeech_example", "examples\synthesizeSpeech_example\synthesizeSpeech_example.csproj", "{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,11 +50,21 @@ Global
 		{1DB58ACD-B26C-4E9A-A8B3-05E8A24A7945}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DB58ACD-B26C-4E9A-A8B3-05E8A24A7945}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DB58ACD-B26C-4E9A-A8B3-05E8A24A7945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BB4ED1-A539-46C2-8F11-106A636162A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BB4ED1-A539-46C2-8F11-106A636162A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BB4ED1-A539-46C2-8F11-106A636162A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BB4ED1-A539-46C2-8F11-106A636162A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EC90DAA0-30A7-4B7A-BE0F-93391B93CED0} = {BA8196BF-7CE1-4F8E-BD43-1E78A1745BEB}
 		{F6CDD111-E6FF-4AFC-92C1-C3E33577F3BD} = {EC90DAA0-30A7-4B7A-BE0F-93391B93CED0}
 		{FB15344C-F547-4524-B838-D3769AD38BB3} = {BA8196BF-7CE1-4F8E-BD43-1E78A1745BEB}
 		{1DB58ACD-B26C-4E9A-A8B3-05E8A24A7945} = {BA8196BF-7CE1-4F8E-BD43-1E78A1745BEB}
+		{99BB4ED1-A539-46C2-8F11-106A636162A1} = {BA8196BF-7CE1-4F8E-BD43-1E78A1745BEB}
+		{9DAA60D0-D86A-4BBB-89B9-C0F3B424FD1D} = {BA8196BF-7CE1-4F8E-BD43-1E78A1745BEB}
 	EndGlobalSection
 EndGlobal
