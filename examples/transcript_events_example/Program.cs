@@ -10,13 +10,13 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        const string bearer_token = "77b572fee80111e99f1028bd6035e8e9";
+        const string bearer_token = "< your-bearer-token >";
 
         var sdk = new AiolaStreamingClient(new StreamingConfig
         {
-            Endpoint = "https://tesla.internal.aiola.ai",
+            Endpoint = "< your-api-base-url >",
             Namespace = "/events",
-            FlowId = "09235016-0971-41e2-a346-afd122585b41",
+            FlowId = "<your-flow-id>",
             ExecutionId = "123321123321",
             LangCode = "en_US",
             TimeZone = "UTC",

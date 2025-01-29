@@ -149,8 +149,6 @@ public class AiolaStreamingClient
            Console.WriteLine("error");
            string data = response.GetValue<string>();
            _config.Callbacks?.OnError?.Invoke(new Dictionary<string, string> { { "socket_error", data } });
-           // Console.WriteLine($"Socket error: {e}");
-           // _config.Callbacks?.OnError?.Invoke(new Dictionary<string, string> { { "socket_error", e } });
        });
     }
 
