@@ -1,0 +1,15 @@
+/aiola_streaming_sdk/obj
+/aiola_streaming_sdk/bin
+/aiola_tts_sdk/obj
+/aiola_tts_sdk/bin
+/examples/keywords_spotting_example/bin
+/examples/keywords_spotting_example/obj
+/examples/transcript_events_example/bin
+/examples/transcript_events_example/obj
+/examples/streamSpeech_example/obj
+/examples/streamSpeech_example/bin
+/examples/synthesizeSpeech_example/obj
+/examples/synthesizeSpeech_example/bin
+/examples/utils/recorder/bin
+/examples/utils/recorder/obj
+examples/.DS_Store
