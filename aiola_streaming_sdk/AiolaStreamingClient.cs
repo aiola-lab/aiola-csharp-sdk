@@ -100,22 +100,17 @@ public class AiolaStreamingClient
 
 
         _sio.On("transcript", response =>
-{
-
-    try
-    {
-        var jsonArray = JsonSerializer.Deserialize<JsonElement>(response.ToString());
-        if (jsonArray.ValueKind == JsonValueKind.Array && jsonArray.GetArrayLength() > 0)
         {
-            string transcript = jsonArray[0].GetProperty("transcript").GetString() ?? "";
-            _config.Callbacks?.OnTranscript?.Invoke(transcript);
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Error parsing transcript: {ex.Message}");
-    }
-});
+            try
+            {
+                var jsonArray = JsonSerializer.Deserialize<JsonElement>(response.ToString());
+                _config.Callbacks?.OnTranscript?.Invoke(jsonArray);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error parsing transcript: {ex.Message}");
+            }
+        });
 
         _sio.On("events", response =>
         {
@@ -123,15 +118,7 @@ public class AiolaStreamingClient
             try
             {
                 var jsonArray = JsonSerializer.Deserialize<JsonElement>(response.ToString());
-                if (jsonArray.ValueKind == JsonValueKind.Array && jsonArray.GetArrayLength() > 0)
-                {
-                    var results = jsonArray[0].GetProperty("results");
-                    if (results.TryGetProperty("masked_query", out JsonElement maskedQuery))
-                    {
-                        string query = maskedQuery.GetString() ?? "";
-                        _config.Callbacks?.OnEvents?.Invoke(query);
-                    }
-                }
+                _config.Callbacks?.OnEvents?.Invoke(jsonArray);
             }
             catch (Exception ex)
             {
