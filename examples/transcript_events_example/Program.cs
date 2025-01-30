@@ -27,7 +27,7 @@ class Program
             // 🔹 Register Callbacks Here
             Callbacks = new StreamingCallbacks
             {
-                OnConnect = async () => Console.WriteLine("✅ Connected to Aiola Streaming API."),
+                OnConnect = () => { Console.WriteLine("✅ Connected to Aiola Streaming API."); return Task.CompletedTask; },
                 OnDisconnect = async (duration, totalAudioSent) =>
                 {
                     Console.WriteLine($"❌ Disconnected after {duration} ms. Total Audio Sent: {totalAudioSent} bytes.");

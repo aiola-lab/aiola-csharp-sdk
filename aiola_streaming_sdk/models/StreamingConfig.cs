@@ -1,13 +1,13 @@
 public class StreamingConfig
 {
-    public string FlowId { get; set; }
-    public string ExecutionId { get; set; }
-    public string LangCode { get; set; }
-    public string TimeZone { get; set; }
-    public string Endpoint { get; set; }
-    public string Namespace { get; set; }
+    public required string FlowId { get; set; }
+    public required string ExecutionId { get; set; }
+    public required string LangCode { get; set; }
+    public required string TimeZone { get; set; }
+    public required string Endpoint { get; set; }
+    public required string Namespace { get; set; }
     public string Transports { get; set; } = "polling";
-    public string AuthType { get; set; }
-    public Dictionary<string, string>  AuthCredentials { get; set; }
-    public StreamingCallbacks Callbacks { get; set; }
+    public required string AuthType { get; set; }
+    public required Dictionary<string, string>  AuthCredentials { get; set; }
+    public required StreamingCallbacks Callbacks { get; set; }
 }

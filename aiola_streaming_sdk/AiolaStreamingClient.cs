@@ -76,7 +76,7 @@ public class AiolaStreamingClient
 
     private void SetupEventHandlers()
     {
-        _sio.OnConnected += async (sender, e) =>
+        _sio.OnConnected += (sender, e) =>
         {
             _stats.ConnectionStartTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
             _config.Callbacks?.OnConnect?.Invoke();
